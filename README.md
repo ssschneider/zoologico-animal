@@ -21,5 +21,5 @@ Projeto pessoal desenvolvido na terceira semana de Live-Coding junto aos alunos 
 
 ## Projeto Rodando
 - Versão Desktop:
-![](src/images/girafa.png)
+![](src/images/desktop.gif)
 
