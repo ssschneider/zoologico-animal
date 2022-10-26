@@ -1,0 +1,30 @@
+@media (max-width: 860px) {
+    .content h1 {
+        font-size: 5rem;
+    }
+
+    .content p {
+        font-size: 2rem;
+        padding: 0 48px;
+    }
+
+    .content button {
+        font-size: 2.4rem;
+        margin: 0 auto;
+        max-width: fit-content;
+        padding: 4px 68px;
+    }
+}
+
+@media (max-width: 728px) {
+    .content button {
+        font-size: 2rem;
+        margin: 0 auto;
+        max-width: fit-content;
+        padding: 4px 48px;
+    }
+
+    .register-popup form label, .register-popup form input {
+        font-size: 1.8rem;
+    }
+}

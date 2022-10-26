@@ -1,0 +1,131 @@
+body {
+    background-color: #0e0e0e;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image img {
+    height: 99.7vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.content h1 {
+    font-size: 9rem;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.content p {
+    font-size: 2.4rem;
+    text-align: justify;
+    margin-bottom: 24px;
+}
+
+.content button {
+    font-size: 2.4rem;
+    border-radius: 8px;
+    border: 1px solid #D3B872;
+    background-color: #0e0e0e;
+    color: #D3B872;
+    padding: 8px;
+    cursor: pointer;
+    transition: 0.8s ease-in-out;
+}
+
+.content button:hover {
+    background-color: #D3B872;
+    color: #0e0e0e;
+    letter-spacing: 2px;
+}
+
+*::selection {
+    background-color: #D3B872;
+    color: #0e0e0e;
+}
+
+.register-popup {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    width: fit-content;
+    padding:  24px 48px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.register-popup.open-popup {
+    display: block;
+}
+
+.register-popup button {
+    background-color: #0e0e0e00;
+    border: none;
+    text-align: left;
+    padding: 5px;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.register-popup button i {
+    font-size: 2rem;
+}
+
+.register-popup form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-popup form label {
+    font-size: 2.4rem;
+    padding-bottom: 4px;
+}
+
+.register-popup form input {
+    font-size: 2.2rem;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 8px;
+    outline: none;
+    color: #D3B872;
+}
+
+.register-popup form .criancas-selecao {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.register-popup form .criancas-selecao label {
+    padding-left: 5px;
+}
+
+.register-popup form .btn-agendar {
+    background-color: #D3B872;
+    color: #0e0e0e;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    border: none;
+    margin-top: 12px;
+    border-radius: 8px;
+    padding: 4px 8px;
+}

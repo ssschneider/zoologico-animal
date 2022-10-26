@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Zoológico Animal</title>
+
+    <script src="https://kit.fontawesome.com/9b2c422549.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="src/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+<body>
+    <main>
+        <section class="image">
+            <img src="src/images/girafa.png" alt="Girafa">
+        </section>
+
+        <section class="content">
+            <h1>Zoológico <br><i class="fa-solid fa-paw"></i> Animal</h1>
+
+            <p>Venha visitar os seus animais favoritos em um simulador 100% realístico do habitat natural deles!</p>
+
+            <button id="btn-agendar-visita">Agendar Visita</button>
+        </section>
+
+        <section class="register-popup">
+            <button id="close-popup"><i class="fa-solid fa-x"></i></button>
+            <form action="#">
+                <label for="nome">Nome completo do responsável:</label>
+                <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+
+                <label for="email">Email para contato:</label>
+                <input type="email" name="email" id="email" placeholder="seuemail@email.com" required>
+
+                <label for="convidados">Número de convidados:</label>
+                <input type="number" name="convidados" id="convidados" placeholder="2" required>
+
+                <label for="criancas">Crianças no Grupo:</label>
+                <div class="criancas-selecao">
+                    <div>
+                        <input type="radio" name="criancas" id="sim">
+                        <label for="sim">Sim</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" name="criancas" id="nao">
+                        <label for="nao">Não</label>
+                    </div>
+                </div>
+
+                <label for="data-1">Data de Preferência 1:</label>
+                <input type="date" name="data-1" id="data-1" placeholder="31/12/2022">
+
+                <label for="data-2">Data de Preferência 2:</label>
+                <input type="date" name="data-2" id="data-2" placeholder="01/01/2023">
+
+                <button class="btn-agendar" id="agendar-visita">AGENDAR UMA EXPERIÊNCIA ÚNICA</button>
+            </form>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="src/js/index.js"></script>
+</body>
+</html>
